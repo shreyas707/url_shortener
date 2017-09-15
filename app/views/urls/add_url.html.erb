@@ -1,0 +1,7 @@
+<%= form_for @url, url: create_url_path(@url) do |f| %>
+	<h2>URL Shortener</h2>
+	<label>Enter URL: </label>
+	<%= f.text_field :url %>
+	<br/><br/>
+	<%= f.submit %>
+<% end %>
