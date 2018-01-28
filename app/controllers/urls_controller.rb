@@ -9,6 +9,8 @@ class UrlsController < ApplicationController
 		@url.shortened_url = request.domain + ":3000/" + SecureRandom.hex(4)
 		if @url.save
 			redirect_to display_url_path(@url)
+		else
+			redirect_to :back
 		end
 	end
 

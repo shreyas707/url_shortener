@@ -1,2 +1,5 @@
+<label>Full URL: </label>
 <%= @url.url %>
-<%= @url.shortened_url %>
+<br/><br/>
+<label>Shortened URL: </label>
+<a href=<%= @url.shortened_url %>><%= @url.shortened_url %></a>
